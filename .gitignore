@@ -10,6 +10,7 @@
 /.next/
 /out/
 /api_temp_stash/
+middleware_temp_stash.ts
 
 # Production build artifacts
 /build
