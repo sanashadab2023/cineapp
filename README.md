@@ -1,5 +1,8 @@
 # CineBook - Production-Ready Cinema Ticket Booking Platform
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsanashadab2023%2Fcineapp&env=JWT_SECRET,CRON_SECRET,STRIPE_SECRET_KEY,NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY&project-name=cinebook)
+[![CI & Build](https://github.com/sanashadab2023/cineapp/actions/workflows/ci.yml/badge.svg)](https://github.com/sanashadab2023/cineapp/actions)
+
 CineBook is a full-stack cinema ticket-booking platform built with **Next.js (App Router)**, **Tailwind CSS**, **Neon Serverless PostgreSQL**, and **Drizzle ORM**. It is engineered for high-concurrency seat reservations, atomic database locking, automated seat-hold release, and digital QR ticket issuance.
 
 ---

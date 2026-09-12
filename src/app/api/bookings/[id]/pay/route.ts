@@ -3,6 +3,8 @@ import { getSessionUserFromRequest } from "@/lib/auth";
 import { confirmBookingPayment } from "@/db/booking-engine";
 import { getDb, poolInstance, ensureSeeded } from "@/db";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(
   req: NextRequest,
   { params }: { params: { id: string } }

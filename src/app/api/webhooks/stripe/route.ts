@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { confirmBookingPayment } from "@/db/booking-engine";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: NextRequest) {
   try {
     const rawBody = await req.text();

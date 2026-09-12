@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDb, poolInstance, ensureSeeded } from "@/db";
 import { verifyPassword, createSessionToken, SESSION_COOKIE_NAME } from "@/lib/auth";
 
+export const dynamic = "force-dynamic";
+
 export async function POST(req: NextRequest) {
   try {
     const { email, password } = await req.json();
