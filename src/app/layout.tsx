@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ClientMockProvider from "@/components/ClientMockProvider";
 
 export const metadata: Metadata = {
   title: "CineBook - Premium Cinema Ticket Booking",
@@ -25,9 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className="min-h-screen bg-cinema-950 text-cinema-100 flex flex-col antialiased">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <ClientMockProvider>
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ClientMockProvider>
       </body>
     </html>
   );

@@ -15,7 +15,8 @@
     "test:idempotency": "tsx tests/payment-idempotency.test.ts",
     "test:auth": "tsx tests/auth-isolation.test.ts",
     "test:e2e": "tsx tests/e2e-journey.test.ts",
-    "test:all": "tsx tests/run-all-tests.ts"
+    "test:all": "tsx tests/run-all-tests.ts",
+    "build:pages": "node scripts/build-gh-pages.js"
   },
   "dependencies": {
     "@neondatabase/serverless": "^0.9.5",

@@ -9,6 +9,7 @@
 # Next.js build output
 /.next/
 /out/
+/api_temp_stash/
 
 # Production build artifacts
 /build
